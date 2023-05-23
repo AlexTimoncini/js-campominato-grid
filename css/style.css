@@ -41,8 +41,7 @@ nav{
 .cell{
     display: flex;
     border: 2px solid black;
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+    aspect-ratio: 1 / 1;
     cursor: crosshair;
     background-color: rgb(82, 248, 171);
 }

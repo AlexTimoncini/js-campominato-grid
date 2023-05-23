@@ -12,10 +12,12 @@
 
 let gridParent = document.getElementById('grid');
 let gridGeneratorDom = document.getElementById('gridGenerator');
+let gridSelect = document.getElementById('grid-select');
+
 
 gridGeneratorDom.addEventListener('click', function(){
     gridParent.innerHTML = '';
-    gridGenerator(100, gridParent);
+    gridGenerator(gridSelect.value, gridParent);
 });
 
 
@@ -26,12 +28,13 @@ gridGeneratorDom.addEventListener('click', function(){
 function gridGenerator(cellNumber, gridContainer){
     for (let i = 0; i < cellNumber; i++){
         let cell = document.createElement('div');
-        cell.innerHTML = '<p>' + i + '</p>';
+        cell.innerHTML = '<p>' + (i + 1) + '</p>';
         cell.classList.add('cell');
+        cell.style.width = 'calc(100% /' + Math.sqrt(cellNumber) + ')';
         gridContainer.append(cell);
         cell.addEventListener('click', function(){
             cell.classList.toggle('active');
-            console.log('you clicked on ' + i);
+            console.log('you clicked on ' + (i + 1));
         });
     }
 };
