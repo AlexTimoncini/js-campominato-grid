@@ -16,10 +16,36 @@ body{
 main{
     background-color: bisque;
     margin: auto;
-    height: 80%;
     width: 80%;
     max-width: 900px;
     padding: 2rem;
     text-align: center;
     border-radius: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    border: 2px solid black;
+    margin: 2rem auto;
+}
+
+.cell{
+    display: flex;
+    border: 2px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.cell p{
+    margin: auto;
+    font-size: 1.5rem;
 }
