@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(82, 248, 171);
+    display: flex;
+    height: 100vh;
+}
+
+main{
+    background-color: bisque;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    max-width: 900px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1.5rem;
+}
