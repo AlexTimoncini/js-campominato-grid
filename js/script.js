@@ -14,16 +14,10 @@ let gridParent = document.getElementById('grid');
 let gridGeneratorDom = document.getElementById('gridGenerator');
 let gridSelect = document.getElementById('grid-select');
 
-
 gridGeneratorDom.addEventListener('click', function(){
     gridParent.innerHTML = '';
     gridGenerator(gridSelect.value, gridParent);
 });
-
-
-
-
-
 
 function gridGenerator(cellNumber, gridContainer){
     for (let i = 0; i < cellNumber; i++){
@@ -38,3 +32,4 @@ function gridGenerator(cellNumber, gridContainer){
         });
     }
 };
+

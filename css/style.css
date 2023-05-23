@@ -44,6 +44,7 @@ nav{
     aspect-ratio: 1 / 1;
     cursor: crosshair;
     background-color: rgb(82, 248, 171);
+    user-select: none;
 }
 
 .cell p{
@@ -53,4 +54,5 @@ nav{
 
 .cell.active{
     background-color: red;
+    color: red;
 }
