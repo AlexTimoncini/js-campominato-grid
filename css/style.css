@@ -43,9 +43,15 @@ nav{
     border: 2px solid black;
     width: calc(100% / 10);
     height: calc(100% / 10);
+    cursor: crosshair;
+    background-color: rgb(82, 248, 171);
 }
 
 .cell p{
     margin: auto;
     font-size: 1.5rem;
+}
+
+.cell.active{
+    background-color: red;
 }

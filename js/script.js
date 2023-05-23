@@ -23,5 +23,8 @@ function gridGenerator(cellNumber, gridContainer){
         cell.innerHTML = '<p>' + i + '</p>';
         cell.classList.add('cell');
         gridContainer.append(cell);
+        cell.addEventListener('click', function(){
+            cell.classList.toggle('active');
+        });
     }
 };
